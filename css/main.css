@@ -245,6 +245,26 @@
   row-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.boxes-service .box {
+  border-radius: 5px;
+  border: 1px solid #b29659;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 19px;
+}
+.boxes-service .box .img {
+  width: 101px;
+  height: 101px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.boxes-service .box .title {
+  color: #121212;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .inp {
   border: 1.2px solid #b4bec8;
