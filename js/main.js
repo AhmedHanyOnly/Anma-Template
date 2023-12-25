@@ -1,22 +1,22 @@
 // Initialize Swiper Slider
 // Set Landing Page Slider
-const swiperElement = document.querySelector(".landing-swiper")
-new Swiper(swiperElement, {
-  // Optional parameters
-  loop: true,
-  centeredSlides: true,
+// Initialize Swiper
+new Swiper(".swiper-landing", {
   parallax: true,
+  effect: "fade",
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 10,
   speed: 1400,
   autoplay: {
-    delay: 4000,
+    delay: 2500,
     disableOnInteraction: false,
   },
-  pagination: {
-    el: ".swiper-pagination",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-  
 });
-
 
 // scroll to top btn
 if (document.getElementById("up-btn")) {
