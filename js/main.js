@@ -17,25 +17,16 @@ new Swiper(swiperElement, {
   
 });
 
-new Swiper(".customers-slider", {
-  slidesPerView: 1,
-  spaceBetween: 21,
-  loop: true,
-  speed: 1300,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    992: {
-      slidesPerView: 2,
-    },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  },
-});
+
+// scroll to top btn
+if (document.getElementById("up-btn")) {
+  const upBtn = document.getElementById("up-btn");
+  window.addEventListener("scroll", () =>
+    window.scrollY >= 300
+      ? upBtn.classList.add("show")
+      : upBtn.classList.remove("show")
+  );
+  upBtn.addEventListener("click", () =>
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  );
+}
