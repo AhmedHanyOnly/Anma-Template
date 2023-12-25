@@ -1,0 +1,39 @@
+.title-bars {
+  color: $main-color;
+font-size: 32px;
+font-weight: 700;
+line-height: normal;
+display: flex;
+align-items: center;
+justify-content: center;
+column-gap: 49px;
+flex-wrap: wrap;
+.bars {
+  &::before,&::after {
+    content: "";
+    display: block;
+    width: 221px;
+    height: 1px;
+    background-color: black;
+    max-width: 100%;
+  }
+  &::before {
+    margin-bottom: 12px;
+  }
+  &::after {
+    transform: translateX(-12px);
+  }
+  &:last-of-type {
+    &::after {
+        transform: translateX(12px);
+      }
+  }
+}
+}
+.sub-title-section {
+  color: #000;
+font-size: 20px;
+margin-bottom: 30px;
+font-weight: 600;
+line-height: normal;
+}
