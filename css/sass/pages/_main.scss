@@ -1,8 +1,56 @@
-.section-goals{
-  background-color: #0F152D;
-  padding: 68px;
+.section-goals {
+  background-color: #0f152d;
+  padding-block: 68px;
   background-image: url("../img/buildings.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100% center;
+  .container {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    .title {
+      margin: 0;
+      width: fit-content;
+      color: $main-color;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: normal;
+      padding: 0 20px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    .content {
+      flex: 1;
+      min-width: 130px;
+      .sub-title {
+        color: $main-color;
+        font-size: 18px;
+        margin-bottom: 8px;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .des {
+        color: $text-light-gray;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 0;
+        line-height: normal;
+      }
+    }
+  }
 }
 
+.section-btns {
+  padding-block: 40px;
+  background-color: rgba(211, 211, 211, 0.5);
+  background-size: cover;
+  background-image: url("../img/section-btns.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: 0;
+  @include overlay-before(#D9D9D9 , 50%);
+  &::before {
+    opacity: 0.1;
+  }
+}
