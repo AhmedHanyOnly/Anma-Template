@@ -672,6 +672,11 @@ select:focus {
   justify-content: space-between;
   padding: 50px;
 }
+@media (max-width: 767.98px) {
+  .section-about .content .header {
+    padding: 20px 0;
+  }
+}
 .section-about .content .header .text {
   display: flex;
   align-items: start;
@@ -735,6 +740,11 @@ select:focus {
 .section-about .content .company-holder .img {
   width: 166px;
   height: auto;
+}
+@media (max-width: 767.98px) {
+  .section-about .content .company-holder .img {
+    width: 44%;
+  }
 }
 
 .footer {
