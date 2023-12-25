@@ -5,8 +5,7 @@
 .landing-swiper .swiper-slide img {
   width: 100%;
   height: 92%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .landing-swiper .swiper-pagination {
   bottom: 4%;
@@ -59,12 +58,10 @@
 }
 
 .h-fit {
-  height: -moz-fit-content;
   height: fit-content;
 }
 
 .w-fit {
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -89,7 +86,6 @@
 }
 
 .w-min-content {
-  width: -moz-min-content;
   width: min-content;
 }
 
@@ -101,7 +97,6 @@
   justify-content: center;
   gap: 11px;
   padding: 7px 33px;
-  width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
   color: #fff !important;
@@ -192,8 +187,7 @@
 .btn-box .img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
   position: absolute;
   left: 0;
@@ -208,8 +202,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  -moz-column-gap: 49px;
-       column-gap: 49px;
+  column-gap: 49px;
   flex-wrap: wrap;
 }
 .title-bars .bars::before, .title-bars .bars::after {
@@ -240,8 +233,7 @@
 
 .boxes-service {
   display: grid;
-  -moz-column-gap: 99px;
-       column-gap: 99px;
+  column-gap: 99px;
   row-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -255,11 +247,6 @@
   font-weight: 400;
   direction: rtl;
   display: block;
-}
-.inp::-moz-placeholder {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(135, 135, 135, 0.5);
 }
 .inp::placeholder {
   font-size: 14px;
@@ -432,14 +419,12 @@ select:focus {
 .section-goals .container {
   display: flex;
   align-items: center;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  column-gap: 80px;
   row-gap: 10px;
   flex-wrap: wrap;
 }
 .section-goals .container .title {
   margin: 0;
-  width: -moz-fit-content;
   width: fit-content;
   color: #b29659;
   font-size: 40px;
@@ -485,8 +470,7 @@ select:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .swiper-landing .inp-search {
   position: absolute;
@@ -500,9 +484,6 @@ select:focus {
   background-color: rgba(23, 22, 24, 0.7);
   border: 0;
   border-radius: 8px;
-  color: #fff;
-}
-.swiper-landing .inp-search .inp::-moz-placeholder {
   color: #fff;
 }
 .swiper-landing .inp-search .inp::placeholder {
@@ -634,8 +615,7 @@ select:focus {
 .box-other-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 14px;
 }
 
@@ -654,8 +634,7 @@ select:focus {
   transform: translate(-30px, -30px);
   width: 100%;
   height: 465px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8px;
 }
 .section-about .content {
@@ -745,6 +724,7 @@ select:focus {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .footer .footer-top .info .logo {
   margin-bottom: 26px;
@@ -769,7 +749,7 @@ select:focus {
   gap: 16px;
 }
 .footer .footer-top .items .title {
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -781,6 +761,13 @@ select:focus {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer-top .items .item svg,
+.footer .footer-top .items .item i {
+  font-size: 20px;
 }
 .footer .footer-top .box-email .text {
   font-size: 16px;
@@ -805,11 +792,6 @@ select:focus {
   font-size: 16px;
   color: #b8b8b8;
 }
-.footer .footer-top .box-email .parent-inp .inp::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  color: #b8b8b8;
-}
 .footer .footer-top .box-email .parent-inp .inp::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -826,12 +808,22 @@ select:focus {
 .footer .footer-top .box-email .social {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 .footer .footer-top .box-email .social i,
 .footer .footer-top .box-email .social svg {
-  font-size: 27px;
+  font-size: 15px;
   color: white;
+  width: 24px;
+  height: 24px;
+  background-color: #b29659;
+  border-radius: 50%;
+  padding: 10px;
+}
+.footer .footer-top .box-email .social img {
+  background-color: #b29659;
+  padding: 10px;
+  border-radius: 50%;
 }
 .footer .bar {
   height: 0.5px;
@@ -844,4 +836,4 @@ select:focus {
   font-weight: 400;
   line-height: normal;
   padding: 10px 0 11px;
-}/*# sourceMappingURL=main.css.map */
+}
