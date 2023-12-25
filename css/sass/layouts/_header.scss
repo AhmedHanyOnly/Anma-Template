@@ -4,84 +4,10 @@
   left: 0;
   width: 100%;
   z-index: 111;
-  background-color: rgba(47, 47, 47, 0.8);
-
-  .top-nav {
-    min-height: 40px;
-    width: 100%;
-    @include flex-center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
-    @include maxWidth(sm) {
-      padding: 7px 0px;
-    }
-
-    .nav-content {
-      width: 100%;
-      @include flex-between;
-      flex-wrap: wrap;
-      gap: 8px;
-
-      @include maxWidth(sm) {
-        justify-content: center;
-      }
-
-      .holder-nav-list {
-        @include flex-between;
-        gap: 30px;
-      }
-
-      .nav-list {
-        @include flex-center;
-        gap: 16px;
-
-        .item {
-          .link {
-            @include flex-justify(flex-end);
-            gap: 8px;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0em;
-            color: $white-color;
-            text-align: right;
-            transition: transform ease-out 0.3s;
-            background-color: transparent;
-
-            .icon {
-              width: 20px;
-              height: auto;
-            }
-
-            &:hover {
-              transform: scale(1.04);
-            }
-          }
-
-          &.dropdown {
-            .dropdown-toggle {
-              gap: 5px;
-
-              &::after {
-                content: none !important;
-              }
-            }
-
-            .dropdown-menu {
-              .dropdown-item {
-                @include flex-justify(flex-start);
-                gap: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
+  background-color: rgba(18, 18, 18, 0.80);
   .bottom-nav {
     box-shadow: 0px 4px 4px 0px rgba(178, 178, 178, 0.2);
-    min-height: 108px;
+    min-height: 74px;
     padding: 0;
     @include maxWidth(sm) {
       padding: 7px 0px;
@@ -91,7 +17,7 @@
       .navbar-brand {
         margin-left: 0;
         img {
-          width: 200px;
+          width: 150px;
           height: auto;
         }
       }
@@ -114,13 +40,13 @@
       .navbar-nav {
         flex: 1;
         justify-content: center;
-        gap: 39px;
+        gap: 10px;
         .nav-item {
           .nav-link {
             position: relative;
             padding: 10px 15px;
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 14px;
+            font-weight: 400;
             line-height: 22px;
             letter-spacing: 0px;
             color: #fff;
@@ -167,12 +93,18 @@
       }
     }
     .btn-holder {
-      .search-nav {
-        background-color: transparent;
-        img {
-          width: 21px;
-          height: auto;
-        }
+      display: flex;
+      gap: 20px;
+    }
+    .phone {
+      color: #e6d9d5;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @include maxWidth(md) {
+        border-inline-start: 1px solid $main-color;
+        padding: 0 10px;
       }
     }
   }
