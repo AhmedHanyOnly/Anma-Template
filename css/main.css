@@ -584,13 +584,18 @@ select:focus {
 }
 
 .footer {
-  background-color: #b29659;
+  background-color: #121212;
   color: white;
   font-size: 16px;
   font-weight: 400;
 }
 .footer .footer-top {
   padding: 40px 0 20px;
+}
+.footer .footer-top .info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .footer .footer-top .info .logo {
   margin-bottom: 26px;
@@ -603,28 +608,30 @@ select:focus {
   }
 }
 .footer .footer-top .info .text {
-  font-size: 12px;
-  font-weight: 500;
-  max-width: 356px;
-  line-height: 26px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .footer .footer-top .items {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 16px;
 }
 .footer .footer-top .items .title {
-  margin-bottom: 1px;
+  margin-bottom: 24px;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
-  font-weight: 600;
 }
 .footer .footer-top .items .item {
-  white-space: nowrap;
-  color: white;
-  line-height: normal;
+  color: #ddd;
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 .footer .footer-top .box-email .text {
   font-size: 16px;
@@ -658,7 +665,7 @@ select:focus {
   font-weight: 400;
   font-size: 16px;
   padding: 10px 17px;
-  background: rgb(176, 121, 93);
+  background: #a98f59;
   border-radius: 10px 0px 0px 10px;
   color: white;
 }
@@ -678,7 +685,7 @@ select:focus {
   background-color: rgb(255, 255, 255);
 }
 .footer .footer-bottom {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
