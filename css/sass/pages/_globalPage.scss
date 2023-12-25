@@ -1,0 +1,31 @@
+* {
+  @include reset-all;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: $text-color1;
+}
+// reset Ul
+ul {
+  @include reset-ul;
+}
+// reset Link
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+}
+// Reset Input
+input:focus,
+select:focus {
+  outline: none;
+}
